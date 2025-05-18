@@ -6,29 +6,95 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="page">
+<div class="sidebar">
+  <img src="shadi.png" alt="Shadi Zaheri" class="profile-pic">
+  <h2>Shadi Zaheri</h2>
+  <p>Computational Scientist</p>
+  <div class="links">
+    <a class="icon-link" href="cv.pdf" target="_blank">📄 CV</a>
 
-<div class="container">
-    <h1>Shadi Zaheri</h1>
-    <p class="subtitle">Computational Scientist | Machine Learning in Genomics | Bioinformatics</p>
+    <a class="icon-link" href="https://linkedin.com/in/shadizaheri" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+      LinkedIn
+    </a>
 
-    <div class="bio">
-        <p>I’m a Computational Scientist with 7+ years of experience in machine learning, bioinformatics, and large-scale genomic data analysis. I specialize in genomic analysis, structural variant detection, and multi-modal data integration—including RNA, DNA, methylation, and single-cell sequencing.</p>
+    <a class="icon-link" href="https://github.com/shadizaheri" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+      GitHub
+    </a>
 
-        <p>I've contributed to national-scale initiatives such as <a href="https://allofus.nih.gov" target="_blank">All of Us</a> and <a href="https://commonfund.nih.gov/smaht" target="_blank">SMaHT</a> (Somatic Mosaicism across Human Tissues), where I develop cloud-native pipelines for robust and scalable genomic analysis.</p>
+    <a class="icon-link" href="https://scholar.google.com/citations?user=tzREvnwAAAAJ&hl=en&oi=ao" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlescholar.svg" alt="Google Scholar">
+      Google Scholar
+    </a>
+  </div>
+</div>
 
-        <p>My work combines deep learning and probabilistic modeling (Pyro, TensorFlow, PyTorch) with cutting-edge genomic technologies, including LLMs and CRISPR-based cell detection. I’m passionate about applying these tools to enable new advances in therapeutic discovery and disease understanding.</p>
-    </div>
 
-    <hr>
+<div class="main">
+  <h1>Shadi Zaheri</h1>
+  <p class="subtitle">Machine Learning Scientist | AI for Biology & Therapeutics | Scalable Multi-Modal Modeling</p>
 
-    <div class="links">
-        <a href="cv.pdf" target="_blank">📄 CV</a>
-        <a href="https://github.com/shadizaheri" target="_blank">💻 GitHub</a>
-        <a href="https://linkedin.com/in/shadizaheri" target="_blank">🔗 LinkedIn</a>
-	<!-- <a href="mailto:shadi.zaheri@gmail.com">📧 Email</a> -->
+  <div class="bio">
+    <p>I am a Computational Scientist at the <a href="https://www.broadinstitute.org" target="_blank">Broad Institute of MIT and Harvard</a>, working at the intersection of machine learning, biology, and large-scale data systems. I bring 7+ years of experience in machine learning, bioinformatics, and multi-modal genomic analysis.</p>
 
-    </div>
+    <p>I specialize in structural variant detection and genomic integration of RNA, DNA, methylation, and single-cell data. I've contributed to national-scale initiatives such as <a href="https://allofus.nih.gov" target="_blank">All of Us</a> and <a href="https://commonfund.nih.gov/smaht" target="_blank">SMaHT</a> (Somatic Mosaicism across Human Tissues), where I develop cloud-native pipelines for robust and scalable analysis.</p>
 
+    <p>My current research explores deep learning, probabilistic modeling (Pyro, TensorFlow, PyTorch), and LLM-based integration to power discovery in therapeutic genomics. I'm passionate about building interpretable and generalizable AI systems that advance human health.</p>
+  </div>
+
+<hr>
+
+<h2>Projects</h2>
+
+<div class="project">
+    <h3>SMaHT: Somatic Mosaicism across Human Tissues</h3>
+    <p>
+        Understanding how somatic variation shapes gene regulation across tissues is central to uncovering the molecular basis of human development, aging, and disease.  
+        As part of the <a href="https://commonfund.nih.gov/smaht" target="_blank">SMaHT initiative</a>, I contribute to multi-omic data analysis to study somatic mosaicism across human tissues. My work spans RNA-seq, long- and short-read DNA, single-cell, and DNA methylation data. I perform detailed analysis of methylation patterns to understand epigenetic regulation and its links to somatic variation. I also develop PyTorch-based models to integrate these heterogeneous modalities and extract biologically meaningful patterns that inform tissue-specific regulatory mechanisms.  
+        In addition to computational development, I serve as a bridge between wet-lab data generators and downstream analysts—coordinating data delivery, quality control, and collaborative interpretation across teams. This role ensures high-integrity, analysis-ready datasets that support the broader goals of SMaHT in building a cross-tissue atlas of somatic variants and their functional consequences.
+    </p>
+</div>
+
+<div class="project">
+    <h3>All of Us </h3>
+    <p>
+        Structural variants (SVs) are key to understanding complex genetic traits, yet remain underexplored at population scale due to detection challenges.
+        As part of the <a href="https://allofus.nih.gov/" target="_blank">All of Us Research Program</a>, I co-led structural variant discovery on over 98,000 whole genomes using the 
+        <a href="https://github.com/broadinstitute/gatk-sv" target="_blank">GATK-SV pipeline</a>. I contributed to core modules within GATK-SV and helped coordinate a scalable, cloud-native framework for joint SV calling across diverse ancestries. 
+        Our work was released as the official short-read SV callset in the 
+        <a href="https://support.researchallofus.org/hc/en-us/articles/27496716922900-All-of-Us-Short-Read-Structural-Variant-Quality-Report-Archived-C2022Q4R9-offcycle-CDRv7" target="_blank">All of Us SV Quality Report</a>. 
+        This effort produced one of the largest and most diverse SV datasets available for biomedical research.
+    </p>
+</div>
+<div class="project">
+    <h3>Malaria Genomics: Plasmodium falciparum Variant Discovery</h3>
+    <p>
+        Malaria remains a major global health challenge, and analyzing the genome of *Plasmodium falciparum* is essential for tracking drug resistance and informing treatment strategies.  
+        I contributed to variant detection for *P. falciparum* by processing high-throughput sequencing data entirely in the cloud. My work supported the implementation and optimization of scalable, reproducible pipelines for identifying genomic variation in the parasite across global populations. I also mentored a summer intern on this project, guiding them through cloud-based data analysis workflows and interpretation of results. This project advanced our understanding of parasite diversity and provided key insights into resistance mechanisms through robust, cloud-native analysis.
+    </p>
+</div>
+
+<div class="project">
+    <h3>Membrane Transport and Ion Channel Modeling</h3>
+    <p>
+        Transport proteins play a central role in drug absorption and efficacy, making them crucial to pharmaceutical development.  
+        Drawing from my PhD research, I developed biophysical and mathematical models to simulate mass transport across epithelial and endothelial membranes. These models help predict drug diffusion and transport in biological systems, providing mechanistic insight relevant to pharmacokinetics and drug design. I built a flexible computational framework for simulating transport phenomena under various physiological conditions.
+    </p>
+</div>
+
+<div class="project">
+    <h3>Independent Project: AI for Drug Discovery</h3>
+    <p>
+        I am independently building next-generation AI models to accelerate drug target discovery and mechanistic insight.  
+        This work integrates genomic, transcriptomic, and structural features using advanced machine learning techniques, including large language models (LLMs), probabilistic programming with <a href="https://pyro.ai/" target="_blank">Pyro</a>, and deep generative architectures. The goal is to develop interpretable, scalable frameworks that prioritize therapeutic targets and generalize across diverse disease contexts.  
+        This initiative directly builds on my prior STAMP project, which modeled membrane transporters and ion channels to simulate molecular transport across biological systems. That biophysical foundation now informs my AI-based efforts to model drug–target interactions in silico.  
+        This project reflects my broader vision: to design intelligent, multi-modal pipelines that make mechanistically grounded, ML-powered therapeutic discovery a practical reality.
+    </p>
+</div>
+
+	
     <footer>
         <p>© 2025 Shadi Zaheri</p>
     </footer>
